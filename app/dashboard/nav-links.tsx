@@ -10,7 +10,11 @@ import { usePathname } from 'next/navigation';
 
 import clsx from 'clsx' ;
 // ...
- 
+ const links = [
+  { name: '首页', href: '/dashboard', icon: HomeIcon },
+  { name: '客户', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: '账单', href: '/dashboard/invoices', icon: DocumentDuplicateIcon },
+];
 export default function NavLinks() {
   const pathname = usePathname();
 
